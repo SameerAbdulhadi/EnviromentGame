@@ -10,8 +10,9 @@ public class waterDropingMoving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 2);
+     
         audioSource = GetComponent<AudioSource>();
+      
         player = Camera.main.transform; // Assuming your camera is the player's perspective
     }
 
@@ -22,7 +23,7 @@ public class waterDropingMoving : MonoBehaviour
     {
         transform.Translate(Vector2.down*2*Time.deltaTime);
         float distance = Vector2.Distance(transform.position, player.position);
-        float volume = Mathf.Clamp01(1 - distance / 5); // Adjust maxDistance as needed
+        float volume = Mathf.Clamp01(1 - distance / 2); // Adjust maxDistance as needed
         audioSource.volume = volume;
     }
 }

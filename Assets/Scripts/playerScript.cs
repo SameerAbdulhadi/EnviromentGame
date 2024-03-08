@@ -5,22 +5,21 @@ using UnityEngine.Rendering;
 using UnityEngine.UI;
 public class playerScript : MonoBehaviour
 {
+    public AudioSource talksound;
+    public AudioSource replysound;
     public GameObject dialougePanel;
     public Text dialougeText;
     public string[] dialogue;
     private int index;
-    public GameObject name;
-
+    public Text name;
     public GameObject coneButton;
     public float wordSpeed;
     public bool playerIsClose;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-    
         if (other.CompareTag("Villager"))
         {
-          
             playerIsClose = true;
         }
     }
@@ -41,7 +40,8 @@ public class playerScript : MonoBehaviour
             index++;
             dialougeText.text = "";
             StartCoroutine(Typing());
-            
+            name.text = "Darth";
+            replysound.Play();
 
         }
         else
@@ -62,12 +62,14 @@ public class playerScript : MonoBehaviour
         {
             dialougeText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
+            
         }
     }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E)&& playerIsClose)
         {
+
             if (dialougePanel.activeInHierarchy)
             {
                 ZeroText();
@@ -76,7 +78,8 @@ public class playerScript : MonoBehaviour
             {
                 dialougePanel.SetActive(true);
                 StartCoroutine(Typing());
-                
+                talksound.Play();
+
             }
         }
         if(dialougeText.text == dialogue[index])

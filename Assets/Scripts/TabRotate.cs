@@ -15,18 +15,18 @@ public class TabRotate : MonoBehaviour
     private float angleOffset;
     private Collider2D col;
     private float totalRotation = 0f;
-
+    
     private void Start()
     {
         myCam = Camera.main;
         col = GetComponent<Collider2D>();
     }
-
+    
     private void Update()
     {
         RotateTab();
     }
-
+    
     void RotateTab()
     {
         if (col.IsTouching(player.GetComponent<Collider2D>()))

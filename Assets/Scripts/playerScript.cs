@@ -9,6 +9,7 @@ public class playerScript : MonoBehaviour
     public Text dialougeText;
     public string[] dialogue;
     private int index;
+    public GameObject name;
 
     public GameObject coneButton;
     public float wordSpeed;
@@ -16,14 +17,16 @@ public class playerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("WaterTabMission"))
+    
+        if (other.CompareTag("Villager"))
         {
+          
             playerIsClose = true;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Tap"))
+        if (other.CompareTag("Villager"))
         {
             playerIsClose = false;
             ZeroText();
@@ -38,6 +41,8 @@ public class playerScript : MonoBehaviour
             index++;
             dialougeText.text = "";
             StartCoroutine(Typing());
+            
+
         }
         else
         {
@@ -47,9 +52,9 @@ public class playerScript : MonoBehaviour
     }
    void ZeroText()
     {
-        dialougeText.text = " ";
-        dialougePanel.SetActive(false);
+        dialougeText.text = "";
         index = 0;
+        dialougePanel.SetActive(false);
     }
     IEnumerator Typing()
     {

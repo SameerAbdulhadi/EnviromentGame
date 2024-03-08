@@ -16,10 +16,17 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject coneButton;
     public float wordSpeed = 0.1f; // Adjust this value as needed
+    public float delayBeforeStart = 3f; // Delay before starting the dialogue
 
     void Start()
     {
         coneButton.SetActive(false);
+        StartCoroutine(StartDialogueWithDelay());
+    }
+
+    IEnumerator StartDialogueWithDelay()
+    {
+        yield return new WaitForSeconds(delayBeforeStart);
         StartDialogue();
     }
 
@@ -61,7 +68,7 @@ public class DialogueManager : MonoBehaviour
     public void LoadNextScene()
     {
         // Load the next scene by its index or name
-        SceneManager.LoadScene("Testing");
+        SceneManager.LoadScene("MAP");
         // If you want to load the next scene by index, use SceneManager.LoadScene(index);
     }
 }

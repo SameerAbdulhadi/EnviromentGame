@@ -40,7 +40,7 @@ public class playerScript : MonoBehaviour
             index++;
             dialougeText.text = "";
             StartCoroutine(Typing());
-            name.text = "Darth";
+            name.text = "Mayor";
             replysound.Play();
 
         }

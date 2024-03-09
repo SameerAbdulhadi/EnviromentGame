@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class showDialogueT2 : MonoBehaviour
+public class dialogue2 : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public Text dialogueText;
@@ -14,18 +14,16 @@ public class showDialogueT2 : MonoBehaviour
     };
     private int index;
 
-    //public GameObject coneButton;
+    // public GameObject coneButton;
     public float wordSpeed = 0.1f; // Adjust this value as needed
-    public float delayBeforeStart = 1f; // Delay before starting the dialogue
+    public float delayBeforeStart = 3f; // Delay before starting the dialogue
 
     void Start()
     {
         //coneButton.SetActive(false);
         StartCoroutine(StartDialogueWithDelay());
         StartCoroutine(ReturnToFactoryAfterDelay());
-
     }
-
 
 
 
@@ -33,11 +31,13 @@ public class showDialogueT2 : MonoBehaviour
     IEnumerator ReturnToFactoryAfterDelay()
     {
         // Wait for some time before returning to the factory scene
-        yield return new WaitForSeconds(16f); // Adjust the delay time as needed (5 seconds in this example)
+        yield return new WaitForSeconds(30f); // Adjust the delay time as needed (5 seconds in this example)
 
         // Load the factory scene
         SceneManager.LoadScene("factory (2)");
     }
+
+
 
 
 
@@ -69,7 +69,7 @@ public class showDialogueT2 : MonoBehaviour
         }
 
         // Dialogue fully typed out, activate the cone button
-        // coneButton.SetActive(true);
+        //coneButton.SetActive(true);
     }
 
     public void NextLine()

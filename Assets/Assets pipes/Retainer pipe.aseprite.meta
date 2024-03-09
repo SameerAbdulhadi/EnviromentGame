@@ -77,6 +77,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -89,6 +90,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -130,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 12
       height: 30
-    spriteID: 1578a6cd64d4f7542a99dfbe482dbc29
+    spriteID: d279c1812fd008a4abb16550a269cde2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,10 +157,11 @@ ScriptedImporter:
         y: 1
         width: 12
         height: 30
-      spriteId: 1578a6cd64d4f7542a99dfbe482dbc29
+      spriteId: d279c1812fd008a4abb16550a269cde2
     linkedCells: []
     parentIndex: -1
   platformSettings: []
+  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}

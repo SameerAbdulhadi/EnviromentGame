@@ -11,17 +11,23 @@ public class enteringFactory : MonoBehaviour
 
     }
     // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        print("4");
-        if (other.gameObject.name == "grip")
+    
+        void Update()
         {
-            print("111111111111111111");
+            // Check for mouse click
+            if (Input.GetMouseButtonDown(0))
+            {
+                // Check if the mouse click is over this object
+                Collider2D collider = GetComponent<Collider2D>();
+                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+                if (collider.OverlapPoint(mousePosition))
+                {
+                    SceneManager.LoadScene("factory (2)");
+                }
+            }
         }
     }
-}
+
+   
+

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WaterTabMission
   - Villager
+  - grip
   layers:
   - Default
   - TransparentFX

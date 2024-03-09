@@ -77,6 +77,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -89,6 +90,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -130,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 29
-    spriteID: 4d52a8b711e597d4d9e02ada4f4989bd
+    spriteID: 0b396fed4489dcf4a9e45a8c87a9da8d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 29
-    spriteID: 058c6a27368065945bf6b0149e772b3a
+    spriteID: 363465c07b2843e439ffcccc15e28846
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 29
-    spriteID: 998d781d625e8de42b3e4b2d2552e73e
+    spriteID: cee2c32d067449a48a853bc8b0302dbd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +192,7 @@ ScriptedImporter:
       y: 41
       width: 32
       height: 29
-    spriteID: d99b0b65fa7bcb24f9fff0e9c94e748a
+    spriteID: ace985908ccb023488b3f8fd583ce9dd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -215,7 +217,7 @@ ScriptedImporter:
         y: 2
         width: 32
         height: 29
-      spriteId: 4d52a8b711e597d4d9e02ada4f4989bd
+      spriteId: 0b396fed4489dcf4a9e45a8c87a9da8d
     - name: Pump pipe_Frame_1
       frameIndex: 1
       cellRect:
@@ -223,7 +225,7 @@ ScriptedImporter:
         y: 2
         width: 32
         height: 29
-      spriteId: 058c6a27368065945bf6b0149e772b3a
+      spriteId: 363465c07b2843e439ffcccc15e28846
     - name: Pump pipe_Frame_2
       frameIndex: 2
       cellRect:
@@ -231,7 +233,7 @@ ScriptedImporter:
         y: 2
         width: 32
         height: 29
-      spriteId: 998d781d625e8de42b3e4b2d2552e73e
+      spriteId: cee2c32d067449a48a853bc8b0302dbd
     - name: Pump pipe_Frame_3
       frameIndex: 3
       cellRect:
@@ -239,10 +241,11 @@ ScriptedImporter:
         y: 2
         width: 32
         height: 29
-      spriteId: d99b0b65fa7bcb24f9fff0e9c94e748a
+      spriteId: ace985908ccb023488b3f8fd583ce9dd
     linkedCells: []
     parentIndex: -1
   platformSettings: []
+  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}

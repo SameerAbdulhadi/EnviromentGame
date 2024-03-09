@@ -77,6 +77,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -89,6 +90,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -130,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 94
       height: 56
-    spriteID: 44450f15b1ca121428a588add1e99337
+    spriteID: 6aadf15200069484797e94d4dcb6a102
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +152,7 @@ ScriptedImporter:
       y: 68
       width: 94
       height: 56
-    spriteID: 772efb55785602d4887a7ac3ebc6b13c
+    spriteID: 7a3159d1a975b254281aa0df7b7c3234
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +172,7 @@ ScriptedImporter:
       y: 132
       width: 94
       height: 56
-    spriteID: ed5a76ff75ac32246b34b3a8f4144583
+    spriteID: 6e269ad7316bdc94bafe434325a1cfec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -195,7 +197,7 @@ ScriptedImporter:
         y: 0
         width: 94
         height: 56
-      spriteId: 44450f15b1ca121428a588add1e99337
+      spriteId: 6aadf15200069484797e94d4dcb6a102
     - name: Generator_Frame_1
       frameIndex: 1
       cellRect:
@@ -203,7 +205,7 @@ ScriptedImporter:
         y: 0
         width: 94
         height: 56
-      spriteId: 772efb55785602d4887a7ac3ebc6b13c
+      spriteId: 7a3159d1a975b254281aa0df7b7c3234
     - name: Generator_Frame_2
       frameIndex: 2
       cellRect:
@@ -211,10 +213,11 @@ ScriptedImporter:
         y: 0
         width: 94
         height: 56
-      spriteId: ed5a76ff75ac32246b34b3a8f4144583
+      spriteId: 6e269ad7316bdc94bafe434325a1cfec
     linkedCells: []
     parentIndex: -1
   platformSettings: []
+  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 96, y: 64}

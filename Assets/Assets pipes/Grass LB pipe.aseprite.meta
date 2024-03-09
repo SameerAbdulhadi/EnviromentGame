@@ -77,6 +77,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -89,6 +90,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -130,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 26
-    spriteID: f767f9f37f2af0b44b76587dfcc9128d
+    spriteID: a77070773a442954591e75c9232abca5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 26
-    spriteID: 24c5925d655756043b72c1f2b7918628
+    spriteID: 8d8893b5be3f7c0468bcb04b6021826c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 26
-    spriteID: fdf6ce97da3c0d04d81bd85cc3658352
+    spriteID: b0c20fb2759b8fa4fbad559f1b36dbca
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -190,7 +192,7 @@ ScriptedImporter:
       y: 38
       width: 32
       height: 26
-    spriteID: cdc587503e655384785d852912a26e19
+    spriteID: afffc9d7fe1f9d34d8d5bc469ba8d91a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -210,7 +212,7 @@ ScriptedImporter:
       y: 38
       width: 32
       height: 26
-    spriteID: 381d941dfe6425046abe2fcee1f5ef79
+    spriteID: e94c7ade83e18a2468413cf83e6a0cfd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -230,7 +232,7 @@ ScriptedImporter:
       y: 38
       width: 32
       height: 26
-    spriteID: ef84a577c3ee3924cb478f140aec62bd
+    spriteID: 2da046a527b7df84e9f49935022e31fd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +252,7 @@ ScriptedImporter:
       y: 72
       width: 32
       height: 26
-    spriteID: 9564b4d7e1429f443b46ea051f15441c
+    spriteID: f2ad31360edef8e44a08c46c9e8392bb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -275,7 +277,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 26
-      spriteId: f767f9f37f2af0b44b76587dfcc9128d
+      spriteId: a77070773a442954591e75c9232abca5
     - name: Grass LB pipe_Frame_1
       frameIndex: 1
       cellRect:
@@ -283,7 +285,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 26
-      spriteId: 24c5925d655756043b72c1f2b7918628
+      spriteId: 8d8893b5be3f7c0468bcb04b6021826c
     - name: Grass LB pipe_Frame_2
       frameIndex: 2
       cellRect:
@@ -291,7 +293,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 26
-      spriteId: fdf6ce97da3c0d04d81bd85cc3658352
+      spriteId: b0c20fb2759b8fa4fbad559f1b36dbca
     - name: Grass LB pipe_Frame_3
       frameIndex: 3
       cellRect:
@@ -299,7 +301,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 26
-      spriteId: cdc587503e655384785d852912a26e19
+      spriteId: afffc9d7fe1f9d34d8d5bc469ba8d91a
     - name: Grass LB pipe_Frame_4
       frameIndex: 4
       cellRect:
@@ -307,7 +309,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 26
-      spriteId: 381d941dfe6425046abe2fcee1f5ef79
+      spriteId: e94c7ade83e18a2468413cf83e6a0cfd
     - name: Grass LB pipe_Frame_5
       frameIndex: 5
       cellRect:
@@ -315,7 +317,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 26
-      spriteId: ef84a577c3ee3924cb478f140aec62bd
+      spriteId: 2da046a527b7df84e9f49935022e31fd
     - name: Grass LB pipe_Frame_6
       frameIndex: 6
       cellRect:
@@ -323,10 +325,11 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 26
-      spriteId: 9564b4d7e1429f443b46ea051f15441c
+      spriteId: f2ad31360edef8e44a08c46c9e8392bb
     linkedCells: []
     parentIndex: -1
   platformSettings: []
+  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}

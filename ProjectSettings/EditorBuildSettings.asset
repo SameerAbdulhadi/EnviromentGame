@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/INTRO 1.unity
     guid: 3db4a776efad16f4d8cd0e77f1c4e605
+  - enabled: 1
+    path: Assets/Scenes/treatment-1.unity
+    guid: f876814a9c3e9a147bf29d9996da7577
   - enabled: 0
     path: Assets/Scenes/step1.unity
     guid: 9f2148d148dba934080ffd288b833caa

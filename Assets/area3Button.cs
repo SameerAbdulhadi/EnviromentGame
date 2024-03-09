@@ -18,7 +18,7 @@ public class area3Button : MonoBehaviour
     };
     private int index;
 
-    public GameObject coneButton;
+    //public GameObject coneButton;
     public float wordSpeed = 0.1f; // Adjust this value as needed
     public float delayBeforeStart = 3f; // Delay before starting the dialogue
 
@@ -26,7 +26,7 @@ public class area3Button : MonoBehaviour
 
     void Start()
     {
-        coneButton.SetActive(false);
+       // coneButton.SetActive(false);
     }
 
 
@@ -72,7 +72,7 @@ public class area3Button : MonoBehaviour
         }
 
         // Dialogue fully typed out, activate the cone button
-        coneButton.SetActive(true);
+        //coneButton.SetActive(true);
     }
 
     public void NextLine()

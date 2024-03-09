@@ -4,11 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
 public class area1Button : MonoBehaviour
 {
-
-
     public GameObject dialoguePanel;
     public Text dialogueText;
     public string[] dialogue = {
@@ -18,19 +15,16 @@ public class area1Button : MonoBehaviour
     };
     private int index;
 
-    public GameObject coneButton;
+    public Button coneButton; // Changed from GameObject to Button
+
     public float wordSpeed = 0.1f; // Adjust this value as needed
     public float delayBeforeStart = 3f; // Delay before starting the dialogue
 
-
-
     void Start()
     {
-        coneButton.SetActive(false);
+        dialoguePanel.SetActive(false); // Deactivate dialogue panel at start
+        coneButton.interactable = false; // Set button as non-interactable initially
     }
-
-
-
 
     void Update()
     {
@@ -48,12 +42,11 @@ public class area1Button : MonoBehaviour
         }
     }
 
-
-
     void StartDialogue()
     {
         dialoguePanel.SetActive(true);
         StartCoroutine(Typing());
+        coneButton.interactable = false; // Set button as non-interactable when dialogue starts
     }
 
     void ZeroText()
@@ -72,7 +65,7 @@ public class area1Button : MonoBehaviour
         }
 
         // Dialogue fully typed out, activate the cone button
-        coneButton.SetActive(true);
+        coneButton.interactable = true; // Set button as interactable after dialogue is finished typing
     }
 
     public void NextLine()
@@ -82,16 +75,7 @@ public class area1Button : MonoBehaviour
             index++;
             dialogueText.text = "";
             StartCoroutine(Typing());
+            coneButton.interactable = false; // Set button as non-interactable when typing next line
         }
     }
-
-   
 }
-
-
-
-
-
-
-
-   

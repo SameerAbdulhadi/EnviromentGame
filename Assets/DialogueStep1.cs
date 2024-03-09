@@ -14,15 +14,32 @@ public class DialogueStep1 : MonoBehaviour
     };
     private int index;
 
-    public GameObject coneButton;
+   // public GameObject coneButton;
     public float wordSpeed = 0.1f; // Adjust this value as needed
     public float delayBeforeStart = 3f; // Delay before starting the dialogue
 
     void Start()
     {
-        coneButton.SetActive(false);
+        //coneButton.SetActive(false);
         StartCoroutine(StartDialogueWithDelay());
+        StartCoroutine(ReturnToFactoryAfterDelay());
     }
+
+
+   
+
+    IEnumerator ReturnToFactoryAfterDelay()
+    {
+        // Wait for some time before returning to the factory scene
+        yield return new WaitForSeconds(16f); // Adjust the delay time as needed (5 seconds in this example)
+
+        // Load the factory scene
+        SceneManager.LoadScene("factory (2)");
+    }
+
+
+
+
 
     IEnumerator StartDialogueWithDelay()
     {
@@ -52,7 +69,7 @@ public class DialogueStep1 : MonoBehaviour
         }
 
         // Dialogue fully typed out, activate the cone button
-        coneButton.SetActive(true);
+        //coneButton.SetActive(true);
     }
 
     public void NextLine()
@@ -65,10 +82,5 @@ public class DialogueStep1 : MonoBehaviour
         }
     }
 
-    public void LoadNextScene()
-    {
-        // Load the next scene by its index or name
-        SceneManager.LoadScene("factory");
-        // If you want to load the next scene by index, use SceneManager.LoadScene(index);
-    }
+    
 }
